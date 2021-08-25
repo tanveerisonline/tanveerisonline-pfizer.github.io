@@ -1,0 +1,39 @@
+// My Theme colors
+$custom-primary: #295960;
+$custom-secondary: #e46487;
+$custom-info: #007cb0;
+$custom-dark: #262626;
+$custom-gray: #f2f2f2;
+$bg: #f7f9fc;
+
+// scss-docs-start gray-color-variables
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+//custom color output
+$primary: $custom-primary;
+$secondary: $custom-secondary;
+$info: $custom-info;
+$dark: $custom-dark;
+$lite-gray: $custom-gray;
+$bg-sections: $bg;
+
+//IMPORT BOOTSTRAP
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+//FONT FAMILY IMPORT
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+body {
+  font-family: sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");

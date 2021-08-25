@@ -1,0 +1,58 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.learn-more {
+  background: $bg;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  .learn-more-title {
+    @include heading-txt;
+  }
+  .boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    .trials {
+      @include box;
+      p {
+        color: $white;
+        padding-top: 2rem;
+        font-size: 1.5rem;
+        padding-left: 3rem;
+        padding-right: 1.2rem;
+      }
+      .icon-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-content: space-between;
+        align-items: flex-start;
+      }
+    }
+  }
+}
+.learn-more {
+  @include media-breakpoint-down(sm) {
+    .learn-more-title {
+      font-size: 2rem;
+      margin-top: 0.5rem;
+    }
+  }
+}
+.learn-more {
+  @include media-breakpoint-down(xl) {
+    .learn-more-title {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.learn-more {
+  @include media-breakpoint-down(lg) {
+    .learn-more-title {
+      font-size: 2rem;
+    }
+  }
+}

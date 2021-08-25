@@ -1,0 +1,93 @@
+@use '../custom' as *;
+.intro-section {
+  width: 100%;
+  height: 100%;
+  padding: 0rem;
+  background-color: $primary;
+  .links {
+    span {
+      font-family: serif;
+      i {
+        list-style: none;
+        margin-top: 2.5rem;
+        color: $white;
+        font-size: 0.9rem;
+
+        &:hover {
+          border-bottom: dashed;
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.display-2 {
+  @include media-breakpoint-down(sm) {
+    &--name {
+      font-size: 1rem;
+    }
+    &--intro {
+      font-size: 2.6rem;
+    }
+  }
+}
+.display-2 {
+  @include media-breakpoint-down(xl) {
+    &--intro {
+      font-size: 2.6rem;
+    }
+  }
+}
+
+.intro-section {
+  @include media-breakpoint-down(lg) {
+    &--intro {
+      font-size: 2.3rem;
+    }
+    .top-text {
+      .h1 {
+        font-size: 1.3rem;
+      }
+      .description {
+        font-size: 1rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+.above-img {
+  background: rgba(44, 44, 44, 0.664);
+  margin: 0 auto;
+  top: 120px;
+  height: 100px;
+  display: block;
+  position: relative;
+  p {
+    color: $white;
+    padding-top: 2.3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transform: scale(1);
+    span {
+      i {
+        padding-right: 0.5rem;
+      }
+    }
+    a {
+      color: $info;
+      text-decoration: none;
+      border-bottom: dotted;
+      font-weight: 600;
+    }
+  }
+}
+.intro-section {
+  @include media-breakpoint-down(md) {
+    .above-img {
+      display: none;
+    }
+  }
+}

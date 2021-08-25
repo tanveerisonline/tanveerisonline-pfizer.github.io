@@ -1,0 +1,20 @@
+@use './custom' as *;
+// @use './fontawesome';
+// Import Components
+
+@use './components/mixins';
+@use './components/typography';
+@use './components/buttons';
+@use './components/animation';
+
+// Import Sections
+
+@use './sections/navbar-section';
+@use './sections/intro-section';
+@use './sections/participate-section';
+@use './sections/expect-section';
+@use './sections/negative-section';
+@use './sections/rutrum-section';
+@use './sections/faq-section';
+@use './sections/learnMore-section';
+@use './sections/footer-section';

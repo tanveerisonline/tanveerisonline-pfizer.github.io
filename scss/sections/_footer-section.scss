@@ -1,0 +1,98 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+.footer-section {
+  background: $dark;
+  border-top: 0.5rem solid $info;
+  height: auto;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  .logo-side {
+    .logo {
+      img {
+        margin-bottom: 1rem;
+      }
+      span {
+        color: $white;
+        font-size: 1.3rem;
+      }
+    }
+    .infos {
+      color: $white;
+    }
+    .copy-write {
+      color: $gray-500;
+      font-size: 0.8rem;
+    }
+  }
+  .link-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: right;
+    .social-icons {
+      a {
+        text-decoration: none;
+        i {
+          color: $white;
+          padding-left: 1.5rem;
+        }
+      }
+    }
+    .main-links {
+      a {
+        color: $white;
+        font-size: 1.4rem;
+        padding-left: 1.5rem;
+        text-decoration: none;
+      }
+    }
+    .sub-links {
+      a {
+        color: $white;
+        padding-left: 1.5rem;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.footer-section {
+  @include media-breakpoint-down(sm) {
+    .logo-side {
+      .logo {
+        @include footer-q;
+      }
+      .infos {
+        @include footer-q;
+        font-size: 0.7rem;
+      }
+      p {
+        @include footer-q;
+        font-size: 0.6rem;
+      }
+    }
+
+    .link-side {
+      .social-icons {
+        margin-top: 2rem;
+        @include footer-query;
+
+        a {
+          i {
+            padding-left: 0rem;
+          }
+        }
+      }
+      .main-links {
+        @include footer-query;
+        a {
+          font-size: 0.8rem;
+        }
+      }
+      .sub-links {
+        @include footer-query;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

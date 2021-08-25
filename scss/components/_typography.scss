@@ -1,0 +1,49 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+.display-2 {
+  margin-top: 5rem;
+  &--name {
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: $white;
+    // margin-bottom: -10px;
+    transform: scaleX(0.5, 1);
+  }
+
+  &--second {
+    color: $secondary;
+    font-weight: 300;
+  }
+
+  &--intro {
+    font-size: 4.7rem;
+    color: $white;
+    font-weight: 800;
+    font-family: "Noto Serif", serif;
+  }
+}
+.intro-section {
+  .top-text {
+    .h1 {
+      margin-top: 2.5rem;
+      color: $white;
+      font-size: 1.8rem;
+      letter-spacing: 0.02rem;
+    }
+    .description {
+      color: $white;
+      font-size: 1.45rem;
+      font-weight: 300;
+      margin-top: 2rem;
+      .first-letter {
+        font-weight: 400;
+      }
+    }
+  }
+}
+.participate {
+  .title-participate {
+    @include heading-txt;
+  }
+}

@@ -1,0 +1,51 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+.faq {
+  background: $bg;
+  padding-bottom: 5rem;
+  .accord {
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    background: $white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    .accordion-inside {
+      margin: 0 auto;
+      .more-link {
+        color: $info;
+        font-size: 2rem;
+        text-align: center;
+        a {
+          text-decoration: none;
+        }
+      }
+      .title-participate {
+        @include heading-txt;
+        text-align: center;
+        padding-top: 5rem;
+      }
+    }
+  }
+}
+.faq {
+  @include media-breakpoint-down(sm) {
+    .accord {
+      .accordion-inside {
+        .title-participate {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+.faq {
+  @include media-breakpoint-down(xl) {
+    .accord {
+      .accordion-inside {
+        .title-participate {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}

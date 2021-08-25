@@ -1,0 +1,16 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+i {
+  font-size: 1.375rem;
+}
+
+.stetho {
+  color: $white;
+  padding: 0.5rem 0.25rem;
+}
+.stetho {
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}
